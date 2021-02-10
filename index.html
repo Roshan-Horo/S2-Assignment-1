@@ -8,31 +8,42 @@
     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
     crossorigin="anonymous" 
     />
+    <link rel="stylesheet" href="css/style.css" >
     <title>Assignment 1</title>
 </head>
 <body>
     <header>
-        <nav>
-            <img src="assets/logo.png" alt="logo_image" height:100% width:100% />
+        <div class="wrapper">
+            <div class="logo-img">
+                <img src="assets/logo.png" alt="logo_image" />
+            </div>
             
-            <ul class="nav-links">
+            
+            <nav>
+             <ul class="nav-links">
               <li><a href="#">Home</a></li>
               <li><a href="#">Product</a></li>
               <li><a href="#">Pricing</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
-            </ul>
+             </ul>
+            </nav>
+            
+            <div ><input class="input-email" type="email" name="email" placeholder="Your Email" /></div>
+
+            <div><button class="btn-sub">Subscribe</button></div>
+            
+        </div>
+            
     
-            <input type="email" name="email" placeholder="Your Email" />
-     
-            <button>Subscribe</button>
-    
-        </nav>
+        
 
         <section class="landing">
-            <div>
-                <div><img src="assets/screen_content.png" alt="" /> </div>
-                <div class="landig-body">
+            <div class="wrapper-landing">
+                <div class="landing-img">
+                    <img src="assets/screen_content.png" alt="" /> 
+                </div>
+                <div class="landing-body">
                     <h2>We focus on <br> ergonomics</h2>
                     <p>Most calendars are designed for teams,<br>State is designed for freelancers</p>
                     <button>Try For Free</button>

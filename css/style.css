@@ -1,0 +1,78 @@
+
+/* ======
+ General
+==========  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ======
+ Header
+==========  */
+
+header{
+    background-image: linear-gradient(to top right,#BE2D92 , #7834BF ) ;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-img{
+    
+}
+.logo-img img{
+    max-width: 100%;
+}
+
+.nav-links{
+    border: 2px solid #fff;
+    display: flex;
+    margin-top: 2rem;
+    word-spacing: 2rem;
+}
+
+.input-email{
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+.btn-sub{
+    margin-top: 2rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+.wrapper-landing{
+    display: flex;
+    justify-content: space-around;
+}
+
+.landing-body, .landing-img{
+    border: 2px solid green;
+}
+
+.landing-img img{
+    max-width: 900px;
+    margin-left: 0;
+}
