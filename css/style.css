@@ -15,7 +15,6 @@ body{
 
 a{
     text-decoration: none;
-    color: #fff;
 }
 
 ul {
@@ -38,37 +37,61 @@ header{
 }
 
 .wrapper{
+    width: 95%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-}
-.wrapper-header{
-    letter-spacing: 1rem;
+    
 }
 
 .logo-img{
-    
+    width: 20%;
 }
 .logo-img img{
     max-width: 100%;
 }
-
+nav{
+    width: 45%;
+}
 .nav-links{
-    border: 2px solid #fff;
     display: flex;
-    word-spacing: 2rem;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+a:active, a:visited{
+    color: #d4d4d4;
+    font-weight: 700;
+}
+.nav-links li{
+    padding: 0.5rem;
+}
+.nav-links .current{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    border-left: 0;
+    border-right: 0;
+}
+
+
+.input-email-div{
+    width:25%;
 }
 
 .input-email{
+    
     padding: 0.5rem 2rem;
     border-radius: 2rem;
     border: none;
+    width: 100%;
 }
 
-.btn-sub{
-    border: none;
-    padding: 0.5rem 1rem;
+.btn-top{
+    padding: 1rem 2rem;
     border-radius: 2rem;
+    color: #FF0000;
+    font-weight: 400;
+    letter-spacing: 0.125rem;
 }
 
 /* ======
