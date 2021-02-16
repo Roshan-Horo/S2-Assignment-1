@@ -33,10 +33,11 @@ ul {
 ==========  */
 
 header{
-    background-image: linear-gradient(to top right,#BE2D92 , #7834BF ) ;
+    background: url('../assets/Artboard\ 1.svg');
+    background-size: cover;
 }
 
-.wrapper{
+.wrapper-header{
     width: 95%;
     margin: 0 auto;
     display: flex;
@@ -94,16 +95,41 @@ a:active, a:visited{
     letter-spacing: 0.125rem;
 }
 
+.ham{
+    color: #fff;
+    display: none;
+}
+
+@media (max-width: 750px){
+    
+    .wrapper-header{
+        justify-content: space-around;
+        
+    }
+    .logo-img{
+        width: 80%;
+    }
+    .ham{
+        display: block;
+    }
+    nav, .input-email-div, .sub-btn{
+        display: none;
+    } 
+}
+
+
 /* ======
  landing
 ==========  */
 
 .wrapper-landing{
     display: flex;
+    
     justify-content: space-between;
     padding: 8rem 0;
-
+    z-index: 10;
 }
+
 
 .landing-body{
     color: #fff;
@@ -123,7 +149,7 @@ a:active, a:visited{
 }
 
 .landing-img,.landing-body{
-    border: 2px solid black;
+    
 }
 
 .landing-img img{
@@ -137,7 +163,10 @@ a:active, a:visited{
     font-size: 1.2rem;
 }
 
-@media (max-width: 450px){
+@media (max-width: 750px){
+    header{
+        background-size: cover;
+    }
     .wrapper-landing{
         flex-direction: column;
         align-items: center;
@@ -145,11 +174,11 @@ a:active, a:visited{
     }
     .landing-img{
         width: 90%;
-        order: -1;
+        order: -2;
     }
     .landing-body{
         width: 90%;
-        order: -2;
+        order: -1;
     }
 }
 
@@ -213,7 +242,7 @@ feature
     line-height: 1.5rem;
 }
 
-@media (max-width: 450px){
+@media (max-width: 750px){
     .body-feature{
         width: 95%;
         flex-direction: column;
@@ -287,7 +316,7 @@ feature
     padding: 1rem 2.5rem;
 }
 
-@media (max-width: 450px){
+@media (max-width: 750px){
     .body{
         width: 90%;
     }
@@ -332,7 +361,7 @@ feature
     line-height: 2rem;
 }
 
-@media (max-width: 450px){
+@media (max-width: 750px){
     .partners .body{
         flex-direction: column;
         width: 90%;
@@ -391,7 +420,7 @@ feature
     border-radius: 50%;
 }
 
-@media (max-width: 450px){
+@media (max-width: 750px){
     .testimonial-body{
         width: 90%;
     }
@@ -450,7 +479,7 @@ feature
     color: magenta;
 }
 
-@media (max-width: 450px){
+@media (max-width: 750px){
     .pricing .body{
         flex-direction: column;
         width: 90%;
@@ -529,7 +558,7 @@ feature
     justify-content: space-around;
 }
 
-@media (max-width: 450px){
+@media (max-width: 750px){
     .contact .body{
         width: 90%;
         flex-direction: column;
@@ -616,7 +645,7 @@ footer{
     color: #EF2779;
 }
 
-@media(max-width: 450px){
+@media(max-width: 750px){
     .footer-body{
         flex-direction: column;
         align-items: center;
