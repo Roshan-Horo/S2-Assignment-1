@@ -148,9 +148,7 @@ a:active, a:visited{
 
 .landing-img{
     width: 55%;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
-         box-shadow: 0 10px 6px -6px #777;
+    
 }
 .btn-try-mobile{
     background-color: blue;
@@ -163,6 +161,9 @@ a:active, a:visited{
     max-width: 100%;
     display: block;
     object-fit: cover;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
 }
 
 .btn-try{
